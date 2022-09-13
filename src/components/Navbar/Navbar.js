@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav>
       <div className="menu">
         <div>
-          <BookmarkIcon />
+          <BookmarkIcon className="MarkBook" />
         </div>
         <div>
           <h2>Trello Clone App</h2>

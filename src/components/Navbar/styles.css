@@ -1,6 +1,20 @@
-.menu{
+.menu {
     display: flex;
     gap: 0.5rem;
-    background-color: gray;
+    background-color: #e2e2e2;
     padding: 1.3rem;
+    position: static;
+    margin-bottom: 1.5rem;
+}
+
+.MarkBook {
+    height: 2rem !important;
+    width: 2rem !important;
+
+    color: #0b60da;
+}
+
+h2{
+    font-size: 1.6rem;
+    color: #525252;
 }
