@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
+
 
 const Home = () => {
+  const [lists, setLists] = useState([])
+
   return (
-    <div>Home</div>
+    <div>
+      <DragDropContext>
+        <Droppable
+          droppableId='app'
+          type='list'
+          direction='horizontal'>
+          {
+            (provided) => {
+              <div className='wrapper'
+              ref={provided.innerRef}>
+                {provided.placeholder}
+              </div>
+            }
+          }
+        </Droppable>
+      </DragDropContext>
+    </div>
   )
 }
 
