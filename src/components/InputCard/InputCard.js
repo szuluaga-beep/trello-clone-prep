@@ -1,6 +1,7 @@
 import { Clear } from '@mui/icons-material'
 import React, { useState } from 'react'
 
+import "./styles.css"
 const InputCard = ({ setOpen, listId, type }) => {
      const [title, setTitle] = useState("")
      return (
