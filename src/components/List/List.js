@@ -1,6 +1,8 @@
 import React from 'react'
 import { Draggable, Droppable } from 'react-beautiful-dnd'
 
+import InputContainer from "../InputContainer/InputContainer"
+
 function index({ list, index }) {
      
      return (
@@ -44,7 +46,10 @@ function index({ list, index }) {
 
                                         </Droppable>
                                    </div>
-                                   {/* InputContainer */}
+                                   <InputContainer
+                                        listId={list.id}
+                                        type="card"
+                                   />
                               </div>
                          </div>
                     )

@@ -1,5 +1,7 @@
 import { Collapse } from '@mui/material'
 import React, { useState } from 'react'
+
+import InputCard from '../InputCard/InputCard'
 import "./styles.css"
 
 const InputContainer = ({ listId, type }) => {
@@ -9,7 +11,7 @@ const InputContainer = ({ listId, type }) => {
                <Collapse
                     in={open}
                >
-                    {/* InputCard */}
+                    <InputCard setOpen={setOpen} listId={ listId} type={type} />
                </Collapse>
                <Collapse in={!open}
                >
