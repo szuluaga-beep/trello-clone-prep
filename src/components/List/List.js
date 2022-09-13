@@ -33,7 +33,7 @@ function index({ list, index }) {
                                                        >
                                                             {
                                                                  list.cards.map((card, index) => {
-                                                                     <p> {card} </p> 
+                                                                     <p> Card </p> 
                                                                  })
                                                             }
                                                             {provided.placeholder}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
+import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
 import sample from "../../utils/sample";
 import List from '../List/List'
