@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
 import sample from "../../utils/sample";
+import InputContainer from '../InputContainer/InputContainer';
 import List from '../List/List'
 
 const Home = () => {
@@ -26,7 +27,9 @@ const Home = () => {
                   })
                 }
                 <div>
-                  {/* InputContainer */}
+                  <InputContainer
+                    type="list"
+                  />
                 </div>
                 {provided.placeholder}
               </div>
