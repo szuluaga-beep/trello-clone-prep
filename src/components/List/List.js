@@ -34,7 +34,7 @@ function index({ list, index }) {
                                                             {
                                                                  list.cards.map((card, index) => {
                                                                      
-                                                                     return <p> Catd </p> 
+                                                                     return <h1>Card</h1> 
                                                                  })
                                                             }
                                                             {provided.placeholder}
