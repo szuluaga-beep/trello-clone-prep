@@ -17,7 +17,9 @@ const InputCard = ({ setOpen, listId, type }) => {
                     />
 
                     <div className='confirm'>
-                         <button className='button-confirm'>
+                         <button
+                              
+                              className='button-confirm'>
                               {
                                    type === "card"
                                         ? "Add Card"

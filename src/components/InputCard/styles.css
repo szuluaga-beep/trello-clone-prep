@@ -1,3 +1,8 @@
+:root {
+     --pink: #e22bba;
+     --white:#fff;
+}
+
 .input-card {
      background-color: #ebecf0;
      padding: 1rem;
@@ -17,10 +22,54 @@
      width: 100%;
      height: 4rem;
 
-     background-color: #fff;
+     background-color: var(--white);
      padding: 0.5rem;
      border: none;
      font-size: 0.9rem;
      border-bottom: 1px solid #ccc;
      resize: none;
+}
+
+.confirm {
+     width: 268px;
+     margin: 0.2rem auto;
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+}
+
+.button-confirm {
+     height: 2rem;
+     width: 6rem;
+     background-color: #525252;
+     cursor: pointer;
+     border: none;
+     border-radius: 0.5rem;
+     -webkit-border-radius: 0.5rem;
+     -moz-border-radius: 0.5rem;
+     -ms-border-radius: 0.5rem;
+     -o-border-radius: 0.5rem;
+     color: var(--white);
+     font-weight: bolder;
+}
+
+.button-confirm:hover {
+     background-color: var(--pink);
+}
+
+.button-cancel {
+     border: none;
+     background-color: none;
+
+     cursor: pointer;
+
+}
+
+.button-cancel:hover {
+     color: var(--pink);
+     transition: color 0.3s;
+     -webkit-transition: color 0.3s;
+     -moz-transition: color 0.3s;
+     -ms-transition: color 0.3s;
+     -o-transition: color 0.3s;
 }

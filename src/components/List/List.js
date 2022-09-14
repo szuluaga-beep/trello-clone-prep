@@ -6,7 +6,10 @@ import InputContainer from "../InputContainer/InputContainer"
 function index({ list, index }) {
      
      return (
-          <Draggable draggableId={list.id} index={index}>
+          <Draggable
+               draggableId={list.id}
+               index={index}
+          >
                {
                     (provided) => (
                          <div {...provided.draggableProps}
