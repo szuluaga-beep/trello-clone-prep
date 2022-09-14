@@ -3,17 +3,15 @@ import { Draggable, Droppable } from 'react-beautiful-dnd'
 
 import InputContainer from "../InputContainer/InputContainer"
 
-function index({ list, index }) {
+export default function List({ list, index }) {
      
      return (
           <Draggable
-               draggableId={list.id}
-               index={index}
+          draggableId={list.id} index={index}
           >
                {
                     (provided) => (
-                         <div {...provided.draggableProps}
-                              ref={provided.innerRef}
+                         <div {...provided.draggableProps} ref={provided.innerRef}
                          >
                               <div className='list-cards'
                                    {...provided.dragHandleProps}
@@ -27,14 +25,13 @@ function index({ list, index }) {
                                         className='container-cards'
                                    >
                                         <Droppable
-                                             droppableId={list.id}
-                                             type="task"
+                                             droppableId={list.id} type="task"
                                         >
                                              {
                                                   (provided) => (
                                                        <div ref={provided.innerRef}
-                                                            {...provided.droppableProps}
-                                                            className='card-container'
+                                                       {...provided.droppableProps}
+                                                       className="card-container"
                                                        >
                                                             {
                                                                  list.cards.map((card, index) => {
@@ -49,10 +46,7 @@ function index({ list, index }) {
 
                                         </Droppable>
                                    </div>
-                                   <InputContainer
-                                        listId={list.id}
-                                        type="card"
-                                   />
+                                   <InputContainer listId={list.id} type="card" />
                               </div>
                          </div>
                     )
@@ -61,4 +55,3 @@ function index({ list, index }) {
      )
 }
 
-export default index
